@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{686AB9E3-CAF6-4740-962D-6E7AFFC7BA22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTcms.BLL</RootNamespace>
+    <AssemblyName>DTcms.BLL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="amount_log.cs" />
+    <Compile Include="app_oauth.cs" />
+    <Compile Include="article.cs" />
+    <Compile Include="attributes.cs" />
+    <Compile Include="category.cs" />
+    <Compile Include="article_comment.cs" />
+    <Compile Include="article_content.cs" />
+    <Compile Include="article_diggs.cs" />
+    <Compile Include="distribution.cs" />
+    <Compile Include="article_download.cs" />
+    <Compile Include="article_goods.cs" />
+    <Compile Include="mail_template.cs" />
+    <Compile Include="manager.cs" />
+    <Compile Include="manager_log.cs" />
+    <Compile Include="manager_role.cs" />
+    <Compile Include="orders.cs" />
+    <Compile Include="payment.cs" />
+    <Compile Include="plugin.cs" />
+    <Compile Include="point_log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search.cs" />
+    <Compile Include="sys_channel.cs" />
+    <Compile Include="sys_config.cs" />
+    <Compile Include="sys_model.cs" />
+    <Compile Include="url_rewrite.cs" />
+    <Compile Include="users.cs" />
+    <Compile Include="user_code.cs" />
+    <Compile Include="user_groups.cs" />
+    <Compile Include="user_login_log.cs" />
+    <Compile Include="user_message.cs" />
+    <Compile Include="user_config.cs" />
+    <Compile Include="download_attach.cs" />
+    <Compile Include="article_news.cs" />
+    <Compile Include="user_oauth.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTcms.Common\DTcms.Common.csproj">
+      <Project>{56213535-7FD9-4ACD-A497-705670CE61DC}</Project>
+      <Name>DTcms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTcms.DAL\DTcms.DAL.csproj">
+      <Project>{A18F58A7-3A14-4558-BA3F-42D61E00909F}</Project>
+      <Name>DTcms.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTcms.Model\DTcms.Model.csproj">
+      <Project>{EA3A3BD8-2B5F-4077-9D8A-DFF27CDD4C12}</Project>
+      <Name>DTcms.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
